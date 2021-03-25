@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="parent" prefHeight="720.0" prefWidth="1280.0" style="-fx-border-color: #7652cc;" styleClass="buttons" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="itpm_projectnb.Home.AddStudentController">
+<AnchorPane id="parent" prefHeight="720.0" prefWidth="1280.0" style="-fx-border-color: #7652cc;" styleClass="buttons" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="itpm_projectnb.Home.ManageStudentController">
    <children>
       <AnchorPane layoutX="110.0" layoutY="299.0" prefHeight="311.0" prefWidth="1060.0" style="-fx-background-color: #b2b3d4;">
          <children>
@@ -87,15 +87,15 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TableView layoutX="110.0" layoutY="47.0" prefHeight="232.0" prefWidth="1060.0">
+      <TableView fx:id="stdGroupsTable" layoutX="110.0" layoutY="47.0" prefHeight="232.0" prefWidth="1060.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="ID" />
-          <TableColumn prefWidth="200.0" text="Academic Year Semester" />
-            <TableColumn prefWidth="200.0" text="Programme" />
-            <TableColumn prefWidth="150.0" text="Group No" />
-            <TableColumn prefWidth="150.0" text="Sub Group No" />
-            <TableColumn prefWidth="150.0" text="Group ID" />
-            <TableColumn prefWidth="150.0" text="Sub Group ID" />
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="yearAndSem" prefWidth="200.0" text="Academic Year Semester" />
+            <TableColumn fx:id="program" prefWidth="200.0" text="Programme" />
+            <TableColumn fx:id="grpNo" prefWidth="150.0" text="Group No" />
+            <TableColumn fx:id="subGrpNo" prefWidth="150.0" text="Sub Group No" />
+            <TableColumn fx:id="grpID" prefWidth="150.0" text="Group ID" />
+            <TableColumn fx:id="subGrpID" prefWidth="150.0" text="Sub Group ID" />
         </columns>
       </TableView>
       <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" layoutX="472.0" layoutY="639.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" style="-fx-border-color: #a883fc; -fx-background-color: #ebebf0;" text="UPDATE">
