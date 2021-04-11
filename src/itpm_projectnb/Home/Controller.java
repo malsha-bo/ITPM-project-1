@@ -11,14 +11,14 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 public class Controller implements Initializable{
- 
-    @FXML
-    private AnchorPane rootPane;
-
-
+  
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -27,13 +27,22 @@ public class Controller implements Initializable{
 
     @FXML
     public void loadAddStudentGroups(javafx.event.ActionEvent actionEvent) throws IOException {
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("addStudentGroups.fxml"));
-       rootPane.getChildren().setAll(pane);
+        Parent pane = FXMLLoader.load(getClass().getResource("addStudentGroups.fxml"));
+       Scene scene = new Scene(pane);
+
+       Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+       window.setScene(scene);
+       window.centerOnScreen();
     }
     
+    @FXML
+    public void loadTags(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent pane = FXMLLoader.load(getClass().getResource("addTags.fxml"));
+       Scene scene = new Scene(pane);
 
-
-
-   
+       Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+       window.setScene(scene);
+       window.centerOnScreen();
+    }   
 }
 

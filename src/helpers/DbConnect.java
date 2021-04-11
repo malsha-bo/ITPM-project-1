@@ -18,7 +18,7 @@ public class DbConnect {
         
         try
         {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             con= (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3308/timetable_management_system", "root", "");
         }
         

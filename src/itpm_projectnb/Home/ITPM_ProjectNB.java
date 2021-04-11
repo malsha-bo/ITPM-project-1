@@ -16,7 +16,7 @@ public class ITPM_ProjectNB extends Application {
       //  Scene scene = new Scene(root);
         
         primaryStage.setTitle("UIT Home");
-        primaryStage.setScene(new Scene(root, 1280, 720));
+        primaryStage.setScene(new Scene(root, 1291, 820));
         primaryStage.show();
     }
 
