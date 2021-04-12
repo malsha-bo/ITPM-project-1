@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ITPM_ProjectNB.jnlp">
+  <information>
+    <title>ITPM_ProjectNB</title>
+    <vendor>Adeesha</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ITPM_ProjectNB.jar" size="206679" download="eager" />
+    <jar href="lib\fontawesomefx-8.4.jar" size="169129" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.23.jar" size="2415211" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ITPM_ProjectNB" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="itpm_projectnb.Home.ITPM_ProjectNB"  name="ITPM_ProjectNB" />
+  <update check="always"/>
+</jnlp>

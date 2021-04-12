@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 16, 2021, 6:06:27 AM
+    Author     : Adeesha
+*/
+
+
+.button:hover {
+    
+    -fx-background-color: #01003b;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.glyph-icon {
+    -fx-fill: #5c8dff;    
+}
+
+.button:hover .glyph-icon{
+    -fx-fill: white;
+    -glyph-size: 65px;
+}
+
+
+#user{
+    -fx-fill: #070338;
+}
+
+.button:hover #user{
+        -fx-fill: white;
+        -glyph-size: 50px;
+
+}
+.btnClose{
+    -fx-background-image: url("close1.png");
+    
+}
+.ddFaculty{
+    -fx-font: 18px;
+}
